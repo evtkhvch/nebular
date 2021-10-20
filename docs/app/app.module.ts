@@ -30,7 +30,7 @@ const docs = require('../output.json');
 
 @NgModule({
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
@@ -45,7 +45,7 @@ const docs = require('../output.json');
     NgdThemeModule.forRoot(),
     NbSidebarModule.forRoot(),
     NbDialogModule.forRoot(),
-    RouterModule.forRoot(routes, { useHash: false, relativeLinkResolution: 'legacy' }),
+    RouterModule.forRoot(routes, { useHash: false, relativeLinkResolution: 'legacy', initialNavigation: 'enabled' }),
   ],
   declarations: [
     NgdAppComponent,
