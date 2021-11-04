@@ -4,5 +4,15 @@
     "name": "8.0.0",
     "path": "/nebular/",
     "isCurrent": true
+  },
+  {
+    "checkoutTarget": "master",
+    "name": "next",
+    "path": "/nebular/next/"
+  },
+  {
+    "checkoutTarget": "7.0.x",
+    "name": "7.0.x",
+    "path": "/nebular/7.0.x/"
   }
 ]
